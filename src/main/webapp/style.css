@@ -1,0 +1,105 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+h2 {
+    text-align: center;
+    color: #004080;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: #004080;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+tr:hover {
+    background: #f1f1f1;
+}
+
+/* Buttons */
+button {
+    background: #004080;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #002b5e;
+}
+
+/* Forms */
+form {
+    display: inline;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #004080;
+}
+
+a:hover {
+    color: #002b5e;
+}
+
+/* Form inputs */
+input[type="text"], input[type="submit"] {
+    padding: 8px;
+    width: 100%;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input[type="submit"] {
+    background: #004080;
+    color: white;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #002b5e;
+}
+
+/* Center the Add Employee link */
+.center {
+    text-align: center;
+    margin-top: 20px;
+}
