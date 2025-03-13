@@ -4,6 +4,9 @@ import com.example.aip_4_new.entity.Employee;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityManagerFactory;
 import jakarta.persistence.Persistence;
+import jakarta.transaction.Transaction;
+import org.hibernate.Session;
+
 import java.util.List;
 
 public class EmployeeDAO {
@@ -23,7 +26,6 @@ public class EmployeeDAO {
         em.getTransaction().commit();
         em.close();
     }
-
 
 
     public Employee getEmployee(Long id) {
@@ -52,6 +54,7 @@ public class EmployeeDAO {
         em.getTransaction().commit();
         em.close();
     }
+
     public void updateEmployee(Employee employee) {
         EntityManager em = entityManagerFactory.createEntityManager();
         em.getTransaction().begin();
@@ -59,7 +62,6 @@ public class EmployeeDAO {
         em.getTransaction().commit();
         em.close();
     }
-
 
 
 }

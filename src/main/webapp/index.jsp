@@ -13,7 +13,7 @@
 
     <table>
         <tr>
-            <th>ID</th>
+            <th>Employee id</th>
             <th>Name</th>
             <th>Department</th>
             <th>City</th>
@@ -41,9 +41,9 @@
                     <input type="hidden" name="id" value="<%= emp.getId() %>">
                     <button type="submit">Delete</button>
                 </form>
-<%--                <a href="editEmployee?id=<%= emp.getId() %>">--%>
-<%--                    <button>Edit</button>--%>
-<%--                </a>--%>
+                <a href="editEmployee?id=<%= emp.getId() %>">
+                    <button>Edit</button>
+                </a>
             </td>
         </tr>
         <%
